@@ -23,21 +23,6 @@
       "static/chunks/main.js",
       "static/chunks/webpack.js",
       "static/chunks/pages/_error.js"
-    ],
-    "/anmeldung": [
-      "static/chunks/main.js",
-      "static/chunks/webpack.js",
-      "static/chunks/pages/anmeldung.js"
-    ],
-    "/community-hub": [
-      "static/chunks/main.js",
-      "static/chunks/webpack.js",
-      "static/chunks/pages/community-hub.js"
-    ],
-    "/mentor-werden": [
-      "static/chunks/main.js",
-      "static/chunks/webpack.js",
-      "static/chunks/pages/mentor-werden.js"
     ]
   },
   "ampFirstPages": []

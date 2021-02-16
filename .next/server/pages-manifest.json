@@ -1,8 +1,5 @@
 {
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
-  "/_document": "pages/_document.js",
-  "/community-hub": "pages/community-hub.js",
-  "/mentor-werden": "pages/mentor-werden.js",
-  "/anmeldung": "pages/anmeldung.js"
+  "/_document": "pages/_document.js"
 }
