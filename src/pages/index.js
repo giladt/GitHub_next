@@ -1,11 +1,20 @@
-import style from '../styles/pages.module.scss'
-
+import { Box, Center, Square, Circle } from "@chakra-ui/react";
 
 export default function LandingPage() {
   return ( 
     <div className={style["page-container"]}> 
         <div>
         <h1>Home Page</h1>
+        <div>
+			<h1>Home Page</h1>
+			<Box bg="tomato" w="100%" p={4} color="white">
+				<p>this is text</p>
+			</Box>
+
+			<Center bg="brand.grey" m="10" w="100%" p={4} color="white">
+				<p>put text in the middle</p>
+			</Center>
+		</div>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus tristique ipsum, quis luctus ipsum laoreet in. Nam tincidunt semper libero, 
             sed consequat quam gravida ut. Aliquam fermentum, ipsum ut fermentum bibendum, ex tellus hendrerit magna, sit amet posuere erat velit et leo. Donec id suscipit orci. Orci varius natoque penatibus et magnis dis parturient montes, 
@@ -50,4 +59,3 @@ export default function LandingPage() {
       </div>
   )
 }
-
