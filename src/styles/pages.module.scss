@@ -1,15 +1,22 @@
 .page-container {
   background: red;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vH - 80px);
+  justify-content: center;
 
   p {
     color: purple;
   }
 
   div{
-    background-color: aqua;
+    background-color: darkslategrey;
+    width: clamp(300px, calc(100% - 20px), 1000px);
+    align-items: center;
   }
   
   p {
-    color: green;
+    color: black;
   }
 }
