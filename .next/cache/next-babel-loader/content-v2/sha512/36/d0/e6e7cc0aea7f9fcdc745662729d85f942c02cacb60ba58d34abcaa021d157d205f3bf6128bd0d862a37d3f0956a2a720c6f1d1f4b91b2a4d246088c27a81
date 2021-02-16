@@ -1,1 +1,0 @@
-{"ast":null,"code":"import Navbar from '.';\nexport default Navbar;","map":{"version":3,"sources":["/home/dan/projects/gr8hub/gr8hub-landing/src/components/Navbar/index.js"],"names":["Navbar"],"mappings":"AAAA,OAAOA,MAAP,MAAmB,GAAnB;AAEA,eAAeA,MAAf","sourcesContent":["import Navbar from '.'\n\nexport default Navbar"]},"metadata":{},"sourceType":"module"}

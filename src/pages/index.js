@@ -1,11 +1,9 @@
-/** @jsx jsx */
-import { jsx } from 'theme-ui'
 import style from '../styles/pages.module.scss'
 
 
 export default function LandingPage() {
   return ( 
-    <div sx={{ variant: 'containers.page' }}> 
+    <div className={style["page-container"]}> 
       <h1>Home Page</h1>
       <div>
         <p>
