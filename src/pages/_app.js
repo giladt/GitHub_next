@@ -1,14 +1,17 @@
-import { ChakraProvider } from "@chakra-ui/react";
+import { ChakraProvider, extendTheme } from "@chakra-ui/react";
 import Navbar from "../components/Navbar";
-import { theme } from "../../src/styles/theme";
+import { gr8hubTheme } from "../../src/styles/theme";
+import { Global } from "@emotion/react";
+import fonts from "../../src/styles/font-face"
+
+const theme = extendTheme(gr8hubTheme)
 
 export default function App({ Component, pageProps }) {
 	return (
 		<ChakraProvider theme={theme}>
-			<div>
-				<Navbar />
-				<Component {...pageProps} />
-			</div>
+			<Global styles={fonts} />
+			<Navbar />
+			<Component {...pageProps} />
 		</ChakraProvider>
 	);
 }
