@@ -7,6 +7,7 @@ import fonts from "../../src/styles/font-face"
 const theme = extendTheme(gr8hubTheme)
 
 export default function App({ Component, pageProps }) {
+	console.log(fonts)
 	return (
 		<ChakraProvider theme={theme}>
 			<Global styles={fonts} />
