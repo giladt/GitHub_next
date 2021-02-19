@@ -3,11 +3,9 @@ import Navbar from "../components/Navbar";
 import { theme } from "../../src/styles/theme";
 import { Fonts } from "../styles/fonts";
 
-const gr8hubTheme = extendTheme(theme)
-
 export default function App({ Component, pageProps }) {
 	return (
-		<ChakraProvider theme={gr8hubTheme}>
+		<ChakraProvider theme={theme}>
 			<Fonts />
 			<Navbar />
 			<Component {...pageProps} />
