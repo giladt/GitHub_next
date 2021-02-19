@@ -13,7 +13,7 @@ export const gr8hubTheme = extendTheme({
 export const theme = extendTheme({
 	fonts: {
 		body: "'Roboto', sans-serif",
-		heading: "'Ballet', monospace",
+		heading: "'Roboto Mono', monospace",
 		mono: "'Roboto Mono', monospace",
 	},
 });

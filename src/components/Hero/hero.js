@@ -7,15 +7,14 @@ function Hero() {
       <Wrap w="clamp(300px, calc(100vw - 20px), 1000px)" m="1"  textAlign="center">
         <Panel>
           <Box m="20px">
-            <Image src="/images/title.png" alt="gr8hub" mb={8} width="250px" mx="auto"/>
-            <Heading size="xl" mb={-1} as="h1" align="center">
+            <Heading size="xl" as="h1" align="center">
                 Mit Menschen vernetzen. 
             </Heading>
-            <Text  fontSize="2xl" mb={6} >
+            <Heading  Size="xl" mb={6} >
               Von Kompetenzen profitieren. 
-            </Text>
+            </Heading>
             <Text fontSize="sm" mb={6} >
-              Weiterbildung und Beratung einfach, günstig <br />
+              Weiterbildung und Beratung einfach, günstig
               sowie jederzeit und überall möglich.
             </Text>
             <Button size="lg" colorScheme="purple" mt="40px" >

@@ -1,5 +1,6 @@
 import Link  from "next/link";
 import style from './Navbar.module.css';
+import { Image } from "@chakra-ui/react"
 
 
 function Navbar() {
@@ -7,8 +8,8 @@ function Navbar() {
     <nav className={style.navbar}>
       <div className= {style["navbar-container"]}>
         <Link href="/">
-          <a className={style["navbar-logo"]}>
-            <img src="/images/gr8hub.png" alt="gr8hub"/>
+          <a className={style["navbar-logo"]}> 
+           <Image src="/images/title.png" alt="gr8hub" mb={8} />
           </a> 
         </Link>
         <ul>
