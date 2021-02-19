@@ -22,8 +22,7 @@ function Hero() {
             <Link href="/anmeldung">
               <a>Kostenlos Platz sichern</a>
             </Link>
-          </Button><br/><br/>
-         
+          </Button>
         </Box>
       </Panel>
     </Wrap>
