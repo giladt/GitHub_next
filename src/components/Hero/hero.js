@@ -23,8 +23,7 @@ function Hero() {
               <a>Kostenlos Platz sichern</a>
             </Link>
           </Button><br/><br/>
-          <Button size="md" mt="40px" variant="outline">Test</Button><br/><br/>
-          <Button size="sm" mt="40px" variant="solid">Test</Button><br/><br/>
+         
         </Box>
       </Panel>
     </Wrap>
