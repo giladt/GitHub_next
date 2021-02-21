@@ -1,5 +1,6 @@
 import { Center } from "@chakra-ui/react";
 import Hero from "../components/Hero";
+import { data } from '../data/panels'
 
 export default function LandingPage ( { heros } ) {
 	return (
@@ -12,10 +13,7 @@ export default function LandingPage ( { heros } ) {
 	)
 }
 
-export async function getStaticProps() {
-	const response = await fetch("http://localhost:3000/api/copy");
-	const { data } = await response.json();
-
+export async function getStaticProps () {
 	return {
 		props: { heros: data },
 	};
