@@ -1,17 +1,15 @@
 import { Center } from "@chakra-ui/react";
 import Hero from "../components/Hero";
 
-export default function LandingPage({ copy }) {
+export default function LandingPage ( { heros } ) {
 	return (
-			<Center
-				w="clamp(300px, calc(100vw - 20px), 1000px)"
-				m="auto"
-				h="calc(100vh - 80px)"
-			>
-        <Hero copy={copy[0]} variant="video" />
-				<Hero copy={copy[1]} />
-			</Center>
-	);
+		<Center flexDirection="column">
+			<Hero idx={ 1 } panels={ heros[ 0 ].panels } variant={ heros[ 0 ].variant } />
+			<Hero idx={ 2 } panels={ heros[ 1 ].panels } variant={ heros[ 1 ].variant } />
+			<Hero idx={ 3 } panels={ heros[ 2 ].panels } variant={ heros[ 2 ].variant } />
+			<Hero idx={ 4 } panels={ heros[ 3 ].panels } variant={ heros[ 3 ].variant } />
+		</Center>
+	)
 }
 
 export async function getStaticProps() {
@@ -19,6 +17,6 @@ export async function getStaticProps() {
 	const { data } = await response.json();
 
 	return {
-		props: { copy: data },
+		props: { heros: data },
 	};
 }

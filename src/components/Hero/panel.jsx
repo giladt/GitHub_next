@@ -1,31 +1,14 @@
 import { Center, Text, Box, Heading, Button, WrapItem } from "@chakra-ui/react";
-import Link from "next/link";
 
 
-export default function Panel({children}){
+export default function Panel({idx, children}){
 
   // let titleArr = copy.title.split(".")
   
   return (
-    <WrapItem flex={1} minW="300px">
-      <Center w="100%" bg="white" h="50vh">
+    <WrapItem flex={1} minW="250px">
+      <Center h="100%" w="100%" textAlign={idx<0 ? "center" : idx % 2 !== 0 ? "start" : "end"} p="1rem">
         {children}
-      {/* <Box m="20px">
-					<Heading size="xl" as="h1" align="center">
-					{titleArr[0]}.
-					</Heading>
-					<Heading size="xl" mb={6}>
-					{titleArr[1]}.
-					</Heading>
-					<Text fontSize="sm" mb={6}>
-          {copy.body}
-					</Text>
-					<Button size="lg" colorScheme="purple" mt="40px">
-						<Link href="/anmeldung">
-							<a>{copy.buttonCopy}</a>
-						</Link>
-					</Button>
-				</Box> */}
       </Center>
     </WrapItem>
   )
