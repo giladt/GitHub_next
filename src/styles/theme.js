@@ -85,6 +85,10 @@ export const theme = extendTheme({
       700: "#94ebaa",
       800: "#a6ebb7",
       900: "#bcfacc",
+    },
+    text: {
+      primary: "#04254E",
+      darkBG: "#fff",
     }
   },
 	fonts: {
