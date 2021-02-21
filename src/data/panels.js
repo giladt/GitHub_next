@@ -17,8 +17,8 @@ export const data = [
 		variant: 'video',
 		panels: [
 			{
-				title: "Mit Menschen vernetzen.Von Kompetenzen profitieren.",
-				body: "Weiterbildung und Beratung einfach, günstig sowie jederzeit und überall möglich.",
+				mainTitle: "Mit Menschen vernetzen.Von Kompetenzen profitieren.",
+				subTitle: "Weiterbildung und Beratung einfach, günstig sowie jederzeit und überall möglich.",
 				vid: 'https://gr8hub.s3.eu-central-1.amazonaws.com/Landing+Page/Gr8hub+Landing+Page+Background.mp4',
 				ctx_text: "Kostenlos Platz sichern",
 			},
@@ -52,6 +52,7 @@ export const data = [
 	},
 	{
 		variant: 'hover',
+		title: "Für mehr Eindrücke wähle einen Charakter aus",
 		panels: [
 			{
 				img: "/images/pngs/julia.png",
