@@ -1,5 +1,7 @@
 import { extendTheme } from "@chakra-ui/react";
 
+import { createBreakpoints } from "@chakra-ui/theme-tools"
+
 const Button = {
   // The styles all button have in common
   baseStyle: {
@@ -55,6 +57,36 @@ export const theme = extendTheme({
 	components: {
 		Button,
 	},
+  breakpoints: createBreakpoints( {
+    sm: "320px",
+    md: "768px",
+    lg: "960px",
+    xl: "1200px",
+  } ),
+  colors: {
+    primary: {
+      100: "#510bc2",
+      200: "#6a29d4",
+      300: "#7539d6",
+      400: "#7f37f3",
+      500: "#8a4af3",
+      600: "#8e56e7",
+      700: "#9965ee",
+      800: "#9c73df",
+      900: "#b991fa",
+    },
+    secondary: {
+      100: "#0b7c27",
+      200: "#18a13b",
+      300: "#22b848",
+      400: "#3acc5f",
+      500: "#50d270",
+      600: "#6fe08b",
+      700: "#94ebaa",
+      800: "#a6ebb7",
+      900: "#bcfacc",
+    }
+  },
 	fonts: {
 		body: "'Roboto', sans-serif",
 		heading: "'Roboto Mono', monospace",
