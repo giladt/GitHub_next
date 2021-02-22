@@ -10,7 +10,6 @@ import {
 } from '@chakra-ui/react'
 
 export const SignUp = ( { onClose, isOpen } ) => {
-  console.log( { onClose, isOpen } )
   return (
     <Modal onClose={ onClose } size="lg" isOpen={ isOpen }>
       <ModalOverlay />
