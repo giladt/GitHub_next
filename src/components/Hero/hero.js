@@ -25,7 +25,7 @@ function HeroVideo ( { panel } ) {
           <video src={ panel.vid } style={ { opacity: 0.25 } } />
         ) }
       </AspectRatio>
-      <Center w="calc(100% - 120px)" color="text.darkBG" mx="auto" mt="calc(-100vh + 80px)" h="calc(100vh - 80px)">
+      <Center w="100%" color="text.darkBG" mx="auto" mt="calc(-100vh + 80px)" h="calc(100vh - 80px)">
         { panel &&
           <HeroNormal panels={ [ panel ] } />
         }
