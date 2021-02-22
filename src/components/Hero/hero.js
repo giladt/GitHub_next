@@ -34,7 +34,13 @@ function HeroVideo ( { panel } ) {
   )
 }
 
+import { useDisclosure } from '@chakra-ui/react'
+import { useState } from 'react'
+import SignUp from '../SignUpForm'
+
 function HeroNormal ( { panels } ) {
+  const { isOpen, onOpen, onClose } = useDisclosure()
+
   return (
     <Wrap textAlign="center">
       { panels.map( ( panel, i ) => (
@@ -67,15 +73,14 @@ function HeroNormal ( { panels } ) {
             )}
 
             { panel.ctx_text && (
-              <Button size="lg" mt="40px" variant="solid">
-                <Link href="/anmeldung">
-                  <a><Text fontWeight="700">{ panel.ctx_text }</Text></a>
-                </Link>
+              <Button size="lg" mt="40px" variant="solid" onClick={ onOpen }>
+                <Text fontWeight="700">{ panel.ctx_text }</Text>
               </Button>
             ) }
           </Box>
         </Panel>
       ) ) }
+      <SignUp onClose={ onClose } isOpen={ isOpen } />
     </Wrap>
   )
 }

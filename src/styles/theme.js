@@ -3,10 +3,9 @@ import { extendTheme } from "@chakra-ui/react";
 import { createBreakpoints } from "@chakra-ui/theme-tools"
 
 const Button = {
-  // The styles all button have in common
   baseStyle: {
     fontWeight: "normal",
-		fontFamily: "Roboto",
+    fontFamily: "Roboto",
 		borderRadius: "10px",
   },
   // Two sizes: sm and md
@@ -32,17 +31,17 @@ const Button = {
 			color: "#8a4af3",
 			_hover: {
 				bg: "#50d270",
-				color: "#fff",
-				boxShadow: "none",
+        boxShadow: "0.2rem 0.2rem 0 0 #8beaa1",
+        color: "#fff",
 			},
     },
     solid: {
       bg: "#8a4af3",
-      color: "white",
+      color: "text.darkBG",
 	  	boxShadow: "0.2rem 0.2rem 0 0 #8beaa1",
 			_hover: {
 				bg: "#50d270",
-				boxShadow: "none",
+        boxShadow: "0.2rem 0.2rem 0 0 #8beaa1",			
 			},
     },
   },
@@ -92,7 +91,7 @@ export const theme = extendTheme({
     }
   },
 	fonts: {
-		body: "'Roboto', sans-serif",
+    body: "Roboto, sans-serif",
 		heading: "'Roboto Mono', monospace",
 		mono: "'Roboto Mono', monospace",
 	},
